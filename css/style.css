@@ -170,19 +170,26 @@ body {
 /* !!! Контейнер для центрування контенту !!! */
 .container {
   /* Максимальна ширина контейнера */
-  max-width: 1158px;
+
+  /* max-width: 1158px; */
+
+  /* max-width: 375px; */
 
   /* Центруємо контент горизонтально */
   margin: 0 auto;
 
   /* Задаємо бічні падінги контейнеру */
-  padding: 0 15px;
+
+  /* padding: 0 15px; */
+  padding: 0 16px;
 }
 
 /* !!! Стандартні падінги для секцій !!! */
 section {
   /* Вертикальні відступи секцій */
-  padding: 120px 0;
+
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 /* .thumb {
@@ -515,34 +522,49 @@ button {
 .features-list {
   /* Розміщуємо елементи features в рядок */
   display: flex;
+  flex-wrap: wrap;
 
   /* Проміжок між елементами features */
-  gap: 24px;
+
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .features-item {
   /* Встановлюємо базовий розмір flex-елемента: 4 елементи в рядок із проміжком 72px між ними */
-  flex-basis: calc((100% - 72px) / 4);
+
+  /* flex-basis: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 
 .features-subtitle {
   /* Розмір шрифту підзаголовків features */
-  font-size: 20px;
+
+  /* font-size: 20px; */
+  font-size: 36px;
 
   /* Товщина шрифту підзаголовків features */
-  font-weight: 500;
+
+  /* font-weight: 500; */
+  font-weight: 700;
 
   /* Міжрядковий інтервал підзаголовків features */
-  line-height: 1.2;
+
+  /* line-height: 1.2; */
+  line-height: 1.11;
 
   /* Відстань між літерами підзаголовків features */
   letter-spacing: 0.02em;
 
   /* Колір підзаголовків features */
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 
 .features-text {
+  /* Товщина шрифту підзаголовків features */
+  font-weight: 500;
+
   /* Вирівнювання тексту опису features по лівому краю */
   text-align: left;
 
@@ -1096,7 +1118,7 @@ button {
   /* Розмір шрифту кнопки */
   font-size: 16px;
 
-  /* Жрність шрифту кнопки */
+  /* Жирність шрифту кнопки */
   font-weight: 500;
 
   /* Простір між рядками кнопки */
@@ -1646,4 +1668,21 @@ button {
 
   /* Дозволяємо взаємодію з елементами */
   pointer-events: auto;
+}
+
+@media screen and (width >= 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .features-list {
+    /* Проміжок між елементами features */
+    gap: 72px 24px;
+  }
+
+  .features-item {
+    /* Встановлюємо базовий розмір flex-елемента: 2 елементи в рядок із проміжком 24px між ними */
+
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }

@@ -32,7 +32,7 @@
   <body class="page">
     <!-- Українською: Універсальний контейнер / English: Universal container -->
     <!--!!! HEADER !!!-->
-    <header class="header">
+    <header class="header visually-hidden">
       <!-- Українською: Верхня частина сторінки (лого, навігація) / English: Top section (logo, navigation) -->
       <div class="container">
         <!-- Українською: Універсальний контейнер / English: Universal container -->
@@ -92,6 +92,101 @@
           </ul>
         </address>
       </div>
+      <!-- !!!MOBILE MENU OVERLAY!!! -->
+      <div class="menu-overlay" id="menu-overlay">
+        <!-- Українською: Фоновий елемент мобільного меню / English: Mobile menu background element -->
+        <div class="menu">
+          <!-- Українською: Контейнер мобільного меню / English: Mobile menu container -->
+          <button class="menu-close-btn" aria-label="close">
+            <!-- Українською: Кнопка закриття мобільного меню / English: Mobile menu close button -->
+            <svg class="menu-btn-svg" width="8" height="8">
+              <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+              <use href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <!-- Українською: Блок навігації мобільного меню / English: Mobile menu navigation block -->
+            <ul>
+              <!-- Українською: Ненумерований список / English: Unordered List -->
+              <li>
+                <!-- Українською: Елемент списку / English: List item -->
+                <a class="menu-link menu-link-active" href="#">
+                  <!-- Українською: Навігаційне посилання (активне) / English: Navigation link (active) -->
+                  Studio
+                </a>
+              </li>
+              <li>
+                <!-- Українською: Елемент списку / English: List item -->
+                <a class="menu-link" href="#">
+                  <!-- Українською: Навігаційне посилання / English: Navigation link -->
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <!-- Українською: Елемент списку / English: List item -->
+                <a class="menu-link" href="#">
+                  <!-- Українською: Навігаційне посилання / English: Navigation link -->
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-contacts">
+            <!-- Українською: Контактна інформація мобільного меню / English: Mobile menu contact information -->
+            <a class="menu-phone" href="tel:+110001111111">
+              <!-- Українською: Гіперпосилання на телефон / English: Phone hyperlink -->
+              +11 (000) 111-11-11
+            </a>
+            <a class="menu-email" href="mailto:info@devstudio.com">
+              <!-- Українською: Гіперпосилання на електронну пошту / English: Email hyperlink -->
+              info@devstudio.com
+            </a>
+          </div>
+          <ul class="menu-social">
+            <!-- Українською: Ненумерований список соціальних мереж / English: Unordered List of social networks -->
+            <li class="menu-icon">
+              <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
+              <a class="menu-social-icon" href="#">
+                <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
+                <svg class="menu-svg" width="24" height="24">
+                  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
+              <a class="menu-social-icon" href="#">
+                <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
+                <svg class="menu-svg" width="24" height="24">
+                  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
+              <a class="menu-social-icon" href="#">
+                <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
+                <svg class="menu-svg" width="24" height="24">
+                  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
+              <a class="menu-social-icon" href="#">
+                <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
+                <svg class="menu-svg" width="24" height="24">
+                  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- !!!Navigation!!! -->
     </header>
     <!--!!! MAIN !!!-->
@@ -99,7 +194,7 @@
       <!-- Українською: Основний вміст сторінки / English: Main page content -->
 
       <!-- !!!section HERO!!! -->
-      <section class="hero section">
+      <section class="hero section visually-hidden">
         <!-- Українською: Тематична група контенту / English: Thematic content group -->
         <div class="container">
           <!-- Українською: Універсальний контейнер / English: Universal container -->
@@ -112,7 +207,7 @@
       </section>
 
       <!-- !!!section FEATURE!!! -->
-      <section class="features section">
+      <section class="features section ">
         <!-- Українською: Тематична група контенту / English: Thematic content group -->
         <div class="container">
           <!-- Українською: Універсальний контейнер / English: Universal container -->
@@ -121,7 +216,7 @@
             <!-- Українською: Ненумерований список / English: Unordered List -->
             <li class="features-item">
               <!-- Українською: Елемент списку / English: List item -->
-              <div class="icon-container">
+              <div class="icon-container visually-hidden">
                 <!-- Українською: Універсальний контейнер / English: Universal container -->
                 <svg class="icon" width="64" height="64">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
@@ -140,7 +235,7 @@
             </li>
             <li class="features-item">
               <!-- Українською: Елемент списку / English: List item -->
-              <div class="icon-container">
+              <div class="icon-container visually-hidden">
                 <!-- Українською: Універсальний контейнер / English: Universal container -->
                 <svg class="icon" width="64" height="64">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
@@ -160,7 +255,7 @@
             </li>
             <li class="features-item">
               <!-- Українською: Елемент списку / English: List item -->
-              <div class="icon-container">
+              <div class="icon-container visually-hidden">
                 <!-- Українською: Універсальний контейнер / English: Universal container -->
                 <svg class="icon" width="64" height="64">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
@@ -179,7 +274,7 @@
             </li>
             <li class="features-item">
               <!-- Українською: Елемент списку / English: List item -->
-              <div class="icon-container">
+              <div class="icon-container visually-hidden">
                 <!-- Українською: Універсальний контейнер / English: Universal container -->
                 <svg class="icon" width="64" height="64">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
@@ -202,7 +297,7 @@
       </section>
 
       <!-- !!!section OUR TEAM!!! -->
-      <section class="team section">
+      <section class="team section visually-hidden">
         <!-- Українською: Тематична група контенту / English: Thematic content group -->
         <div class="container">
           <!-- Українською: Універсальний контейнер / English: Universal container -->
@@ -485,7 +580,7 @@
         </div>
       </section>
       <!-- !!!section portfolio!!! -->
-      <section class="portfolio section" id="portfolio-id">
+      <section class="portfolio section visually-hidden" id="portfolio-id">
         <!-- Українською: Тематична група контенту / English: Thematic content group -->
         <div class="container">
           <!-- Українською: Універсальний контейнер / English: Universal container -->
@@ -670,7 +765,7 @@
       </section>
     </main>
     <!--!!! FOOTER !!!-->
-    <footer class="footer">
+    <footer class="footer visually-hidden">
       <!-- Українською: Нижня частина сторінки (копірайт, посилання) / English: Bottom section (copyright, links) -->
       <div class="container">
         <!-- Українською: Універсальний контейнер / English: Universal container -->
@@ -771,7 +866,7 @@
       <!-- Українською: Універсальний контейнер / English: Universal container -->
     </footer>
     <!-- !!!BACKDROP!!! -->
-    <div class="backdrop is-open">
+    <div class="backdrop visually-hidden">
       <!-- Українською: Фоновий елемент модального вікна / English: Modal window background element -->
       <div class="backdrop-modal">
         <!-- Українською: Модальне вікно / English: Modal window -->
@@ -858,7 +953,7 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href class="backdrop-modal-policy-link">Privacy Policy</a>
+              <a href="#" class="backdrop-modal-policy-link">Privacy Policy</a>
               <!-- Українською: Посилання на політику конфіденційності / English: Privacy policy link -->
             </label>
           </div>
