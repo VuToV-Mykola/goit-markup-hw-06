@@ -173,7 +173,7 @@ body {
 
   /* max-width: 1158px; */
 
-  /* max-width: 375px; */
+  /* max-width: 320px; */
 
   /* Центруємо контент горизонтально */
   margin: 0 auto;
@@ -209,6 +209,7 @@ img {
 
   /* Задаємо властивість, щоб зображення не спотворювалося при масштабуванні */
   object-fit: cover;
+  margin: 0 auto;
 }
 
 input,
@@ -383,7 +384,7 @@ button {
   /* Фонове зображення з накладкою */
   background-image:
     linear-gradient(to bottom, rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
-    url("../images/people-office.jpg");
+    url("../images/homework-6/mobile/hero-image/dark-bg/jpg/@1x/Dark-bg_3:1533.jpg");
 
   /* Позиціонування фонового зображення */
   background-position: center center;
@@ -395,24 +396,33 @@ button {
   background-repeat: no-repeat;
 
   /* Максимальна ширина секції hero */
-  max-width: 1440px;
+
+  /* max-width: 1440px; */
 
   /* Центрування секції hero */
   margin: 0 auto;
 
   /* Вертикальні падінги секції hero */
-  padding: 188px 0;
+
+  /* padding: 188px 0; */
+  padding: 72px 36px;
+
+  @media screen and (resolution >= 2x) {
+    background-image:
+      linear-gradient(to bottom, rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
+      url("../images/homework-6/mobile/hero-image/dark-bg/jpg/@2x/Dark-bg_3:1533.jpg");
+  }
 }
 
 .hero-title {
   /* Розмір шрифту заголовку hero */
-  font-size: 56px;
+  font-size: 36px;
 
   /* Товщина шрифту заголовку hero */
   font-weight: 700;
 
   /* Міжрядковий інтервал заголовку hero */
-  line-height: 1.07;
+  line-height: 1.11;
 
   /* Відстань між літерами заголовку hero */
   letter-spacing: 0.02em;
@@ -421,10 +431,14 @@ button {
   color: var(--white);
 
   /* Максимальна ширина заголовку hero */
-  max-width: 496px;
+
+  /* max-width: 496px; */
 
   /* Центрування та нижній відступ заголовку hero */
-  margin: 0 auto 48px;
+
+  /* margin: 0 auto 48px; */
+  margin: 0 auto 72px;
+  padding: 0 36px;
 }
 
 /* !!! Стилі для кнопки hero !!! */
@@ -498,7 +512,7 @@ button {
   background-color: var(--cloud);
 
   /* Розміщуємо іконку в центрі контейнера */
-  display: flex;
+  display: none;
 
   /* Центруємо іконку по горизонталі */
   justify-content: center;
@@ -567,23 +581,25 @@ button {
 
   /* Вирівнювання тексту опису features по лівому краю */
   text-align: left;
-
-  /* Колір тексту опису features */
-  color: var(--slate);
 }
 
 /* !!! Стилі для секції team !!! */
 .team {
-  /* Фоновий колір секції team */
   background-color: var(--cloud);
+  padding-right: 12px;
+
+  padding-left: 12px;
 }
 
 .team-list {
   /* Розміщуємо елементи команди в рядок */
   display: flex;
+  flex-wrap: wrap;
 
   /* Проміжок між елементами команди */
-  gap: 24px;
+
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .team-item {
@@ -591,7 +607,9 @@ button {
   background-color: var(--white);
 
   /* Базовий розмір flex-елемента: 4 елементи в рядок */
-  flex-basis: calc((100% - 72px) / 4);
+
+  /* flex-basis: calc((100% - 72px) / 4); */
+  width: 100%;
 
   /* Заокруглення нижніх кутів карток команди */
   border-radius: 0 0 4px 4px;
@@ -632,12 +650,17 @@ button {
   color: var(--navy-blue);
 
   /* Нижній відступ заголовку секції team */
+
   margin-bottom: 72px;
 }
 
 .team-descr {
+  overflow: hidden;
+
   /* Внутрішні відступи опису команди */
-  padding: 32px 0;
+
+  /* padding: 32px 0; */
+  padding: 32px 16px;
 }
 
 .team-subtitle {
@@ -661,9 +684,6 @@ button {
 }
 
 .team-text {
-  /* Колір тексту опису команди */
-  color: var(--slate);
-
   /* Нижній відступ тексту опису команди */
   margin-bottom: 8px;
 }
@@ -777,7 +797,9 @@ button {
 
 .portfolio-item {
   /* Базовий розмір flex-елемента: 3 елементи в рядок */
-  flex-basis: calc((100% - 48px) / 3);
+
+  /* flex-basis: calc((100% - 48px) / 3); */
+  width: 100%;
 
   /* Нижня рамка елементів portfolio */
   border-bottom: 1px solid var(--cornflower);
@@ -832,6 +854,8 @@ button {
 }
 
 .portfolio-descr {
+  text-align: left;
+
   /* Внутрішні відступи опису portfolio */
   padding: 32px 16px;
 
@@ -870,7 +894,8 @@ button {
 /* !!! Стилі для footer !!! */
 .footer {
   /* Вирівнювання тексту footer по лівому краю */
-  text-align: left;
+
+  /* text-align: left; */
 
   /* Фоновий колір footer */
   background: var(--navy-blue);
@@ -879,12 +904,24 @@ button {
   width: 100%;
 
   /* Вертикальні падінги footer */
-  padding: 100px 0;
+
+  /* padding: 100px 0; */
+  padding: 96px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* align-items: center; */
+  gap: 72px;
 }
 
 .logo-container {
   /* Правий відступ контейнера логотипу */
-  margin-right: 120px;
+
+  /* margin-right: 120px; */
 }
 
 .footer-logo {
@@ -913,7 +950,9 @@ button {
   display: inline-block;
 
   /* Нижній відступ логотипу footer */
-  margin-bottom: 16px;
+
+  /* margin-bottom: 16px; */
+  margin-bottom: 19px;
 }
 
 .accent-footer {
@@ -926,19 +965,23 @@ button {
   color: var(--cloud);
 
   /* Максимальна ширина тексту footer */
-  max-width: 264px;
+
+  /* max-width: 264px; */
 }
 
-.footer .container {
+/* .footer .container {
   /* Розміщуємо елементи footer в рядок */
-  display: flex;
 
-  /* Вирівнюємо елементи footer по базовій лінії */
-  align-items: baseline;
-}
+/* display: flex; */
+
+/* Вирівнюємо елементи footer по базовій лінії */
+
+/* align-items: baseline; */
+
+/* } */
 
 .footer-social {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .footer-social-text {
@@ -1013,6 +1056,7 @@ button {
 }
 
 /* !!! Стилі для підписки на розсилку !!! */
+
 .email-input-subscribe {
   /* Основний шрифт проекту */
   font-family: var(--primary-family);
@@ -1038,8 +1082,12 @@ button {
 
 /* !!! Стилі для форми підписки !!! */
 .email-form {
+  text-align: center;
+
   /* Розміщуємо елементи форми по горизонталі в рядок */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   /* Відступи між елементами форми */
   gap: 24px;
@@ -1067,6 +1115,7 @@ button {
 
   /* Прозорий фон поля вводу */
   background-color: transparent;
+  opacity: 0.3;
 
   /* Ширина поля вводу */
   width: 264px;
@@ -1084,7 +1133,7 @@ button {
   border-radius: 4px;
 
   /* Тінь поля вводу */
-  box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
 
   /* Прибираємо outline */
   outline: transparent;
@@ -1108,6 +1157,7 @@ button {
 
   /* Колір тексту placeholder */
   color: #fff;
+  opacity: 0.6;
 }
 
 /* !!! Стилі для кнопки підписки !!! */
@@ -1675,6 +1725,44 @@ button {
     max-width: 768px;
   }
 
+  /* !!! Стилі для секції Hero !!! */
+  .hero {
+    /* Фонове зображення з накладкою */
+
+    background-image:
+      linear-gradient(to bottom, rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
+      url("../images/homework-6/tablet/hero-image/dark-bg/jpg/@1x/Dark-bg_:10554.jpg");
+
+    /* Вертикальні падінги секції hero */
+
+    padding: 112px 0;
+
+    @media screen and (resolution >= 2x) {
+      background-image:
+        linear-gradient(to bottom, rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
+        url("../images/homework-6/tablet/hero-image/dark-bg/jpg/@2x/Dark-bg_:10554.jpg");
+    }
+  }
+
+  .hero-title {
+    /* Розмір шрифту заголовку hero */
+    font-size: 56px;
+
+    /* Міжрядковий інтервал заголовку hero */
+    line-height: 1.07;
+
+    /* Максимальна ширина заголовку hero */
+
+    max-width: 496px;
+
+    /* Центрування та нижній відступ заголовку hero */
+
+    margin: 0 auto 36px;
+    padding: 0;
+  }
+
+  /* !!! Стилі для секції features !!! */
+
   .features-list {
     /* Проміжок між елементами features */
     gap: 72px 24px;
@@ -1684,5 +1772,200 @@ button {
     /* Встановлюємо базовий розмір flex-елемента: 2 елементи в рядок із проміжком 24px між ними */
 
     flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* !!! Стилі для секції TEAM !!! */
+  .team {
+    padding-right: 92px;
+
+    padding-left: 92px;
+  }
+
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    /* Базовий розмір flex-елемента: 4 елементи в рядок */
+
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* !!! Стилі для секції Portfolio !!! */
+  .portfolio-item {
+    /* Базовий розмір flex-елемента: 3 елементи в рядок */
+
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-list {
+    /* Вертикальний проміжок між рядками portfolio */
+    row-gap: 72px;
+  }
+
+  /* !!! Стилі для секції Footer !!! */
+  .footer-wrapper {
+    text-align: left;
+    justify-content: flex-start;
+    gap: 72px 24px;
+    padding-left: 92px;
+  }
+
+  .footer-text {
+    /* Максимальна ширина тексту footer */
+
+    max-width: 264px;
+  }
+
+  /* .footer-social {
+    margin-right: 80px;
+  } */
+  .email-input {
+    margin-right: auto;
+  }
+}
+
+@media screen and (width >= 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  section {
+    /* Вертикальні відступи секцій */
+
+    padding: 120px 0;
+  }
+
+  /* !!! Стилі для секції Hero !!! */
+  .hero {
+    /* Фонове зображення з накладкою */
+
+    background-image:
+      linear-gradient(to bottom, rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
+      url("../images/homework-6/main-page/hero-image/people-office-1/jpg/@1x/people-office_1_5:5567.jpg");
+
+    /* Максимальна ширина секції hero */
+
+    max-width: 1440px;
+
+    /* Вертикальні падінги секції hero */
+
+    padding: 188px 0;
+
+    @media screen and (resolution >= 2x) {
+      background-image:
+        linear-gradient(to bottom, rgb(46 47 66 / 70%), rgb(46 47 66 / 70%)),
+        url("../images/homework-6/main-page/hero-image/people-office-1/jpg/@2x/people-office_1_5:5567.jpg");
+    }
+  }
+
+  .hero-title {
+    /* Центрування та нижній відступ заголовку hero */
+
+    margin: 0 auto 48px;
+  }
+
+  /* !!! Стилі для секції features !!! */
+  .features-list {
+    /* Проміжок між елементами features */
+    gap: 24px;
+  }
+
+  .features-item {
+    /* Встановлюємо базовий розмір flex-елемента: 4 елементи в рядок із проміжком 72px між ними */
+
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .features-subtitle {
+    /* Розмір шрифту підзаголовків features */
+
+    font-size: 20px;
+
+    /* Товщина шрифту підзаголовків features */
+
+    font-weight: 500;
+
+    /* Міжрядковий інтервал підзаголовків features */
+
+    line-height: 1.2;
+
+    text-align: left;
+  }
+
+  .features-text {
+    /* Товщина шрифту підзаголовків features */
+    font-weight: 400;
+  }
+
+  .icon-container {
+    display: flex;
+  }
+
+  /* !!! Стилі для секції TEAM !!! */
+  .team {
+    padding-right: 0;
+
+    padding-left: 0;
+  }
+
+  .team-list {
+    /* Проміжок між елементами команди */
+
+    gap: 24px;
+  }
+
+  .team-item {
+    /* Базовий розмір flex-елемента: 4 елементи в рядок */
+
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .team-descr {
+    /* Внутрішні відступи опису команди */
+
+    padding: 32px 0;
+  }
+
+  /* !!! Стилі для секції Portfolio !!! */
+  .portfolio-item {
+    /* Базовий розмір flex-елемента: 3 елементи в рядок */
+
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  /* !!! Стилі для секції Footer !!! */
+  .logo-container {
+    /* Правий відступ контейнера логотипу */
+    margin-right: 120px;
+  }
+
+  .footer-wrapper {
+    gap: 0;
+    padding-left: 0;
+  }
+
+  .footer-logo {
+    /* Нижній відступ логотипу footer */
+    margin-bottom: 16px;
+  }
+
+  .footer-text {
+    /* Максимальна ширина тексту footer */
+
+    max-width: 264px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+  }
+
+  .email-input-field {
+    opacity: 1;
+  }
+
+  .email-input-field::placeholder {
+    opacity: 1;
   }
 }
