@@ -97,95 +97,114 @@
           </ul>
         </address>
       </div>
-      <!-- !!!MOBILE MENU OVERLAY!!! -->
-      <div class="menu-overlay visually-hidden" id="menu-overlay">
+      <!-- !!!MOBILE MENU!!! -->
+      <div class="mob-menu active" id="mob-menu">
         <!-- Українською: Фоновий елемент мобільного меню / English: Mobile menu background element -->
-        <div class="menu">
-          <!-- Українською: Контейнер мобільного меню / English: Mobile menu container -->
-          <button class="menu-close-btn" aria-label="close">
+
+        <div>
+          <button class="mob-close-btn" aria-label="close">
             <!-- Українською: Кнопка закриття мобільного меню / English: Mobile menu close button -->
-            <svg class="menu-btn-svg" width="8" height="8">
+            <svg class="mob-btn-svg" width="8" height="8">
               <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-              <use href="./images/icons.svg#icon-close-button"></use>
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1-24-946"></use>
             </svg>
           </button>
-          <nav class="menu-nav">
+          <nav class="mob-nav">
             <!-- Українською: Блок навігації мобільного меню / English: Mobile menu navigation block -->
-            <ul>
+            <ul class="mob-nav-list">
               <!-- Українською: Ненумерований список / English: Unordered List -->
-              <li>
+              <li class="mob-nav-item">
                 <!-- Українською: Елемент списку / English: List item -->
-                <a class="menu-link menu-link-active" href="#">
-                  <!-- Українською: Навігаційне посилання (активне) / English: Navigation link (active) -->
+                <a class="mob-nav-link current" href="./index.html">
+                  <!-- Українською: Навігаційне посилання / English: Navigation link -->
                   Studio
                 </a>
               </li>
-              <li>
+              <li class="mob-nav-item">
                 <!-- Українською: Елемент списку / English: List item -->
-                <a class="menu-link" href="#">
+                <a class="mob-nav-link" href="#portfolio-id">
                   <!-- Українською: Навігаційне посилання / English: Navigation link -->
                   Portfolio
                 </a>
               </li>
-              <li>
+              <li class="mob-nav-item">
                 <!-- Українською: Елемент списку / English: List item -->
-                <a class="menu-link" href="#">
+                <a class="mob-nav-link" href="">
                   <!-- Українською: Навігаційне посилання / English: Navigation link -->
                   Contacts
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="menu-contacts">
-            <!-- Українською: Контактна інформація мобільного меню / English: Mobile menu contact information -->
-            <a class="menu-phone" href="tel:+110001111111">
-              <!-- Українською: Гіперпосилання на телефон / English: Phone hyperlink -->
-              +11 (000) 111-11-11
-            </a>
-            <a class="menu-email" href="mailto:info@devstudio.com">
-              <!-- Українською: Гіперпосилання на електронну пошту / English: Email hyperlink -->
-              info@devstudio.com
-            </a>
-          </div>
-          <ul class="menu-social">
+        </div>
+        <div>
+          <address class="mob-contacts">
+            <!-- Українською: Контактна інформація / English: Contact Information -->
+            <ul class="mob-contacts-list">
+              <!-- Українською: Ненумерований список / English: Unordered List -->
+              <li class="mob-contacts-item ">
+                <!-- Українською: Елемент списку / English: List item -->
+                <a
+                  class="mob-contacts-link current"
+                  href="tel:+110001111111"
+                  target="_blank"
+                  rel="noopener">
+                  +11 (000) 111-11-11
+                </a>
+                <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              </li>
+              <li class="mob-contacts-item">
+                <!-- Українською: Елемент списку / English: List item -->
+                <a
+                  class="mob-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener">
+                  <!-- Українською: Гіперпосилання / English: Hyperlink -->
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-menu-social">
             <!-- Українською: Ненумерований список соціальних мереж / English: Unordered List of social networks -->
-            <li class="menu-icon">
+            <li class="mob-menu-icon">
               <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
-              <a class="menu-social-icon" href="#">
+              <a class="mob-menu-social-icon" href="#">
                 <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
-                <svg class="menu-svg" width="24" height="24">
+                <svg class="mob-menu-svg" width="24" height="24">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram-2-16-396"></use>
                 </svg>
               </a>
             </li>
-            <li class="menu-icon">
+            <li class="mob-menu-icon">
               <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
-              <a class="menu-social-icon" href="#">
+              <a class="mob-menu-social-icon" href="#">
                 <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
-                <svg class="menu-svg" width="24" height="24">
+                <svg class="mob-menu-svg" width="24" height="24">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter-1-16-402"></use>
                 </svg>
               </a>
             </li>
-            <li class="menu-icon">
+            <li class="mob-menu-icon">
               <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
-              <a class="menu-social-icon" href="#">
+              <a class="mob-menu-social-icon" href="#">
                 <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
-                <svg class="menu-svg" width="24" height="24">
+                <svg class="mob-menu-svg" width="24" height="24">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook-1-16-408"></use>
                 </svg>
               </a>
             </li>
-            <li class="menu-icon">
+            <li class="mob-menu-icon">
               <!-- Українською: Елемент списку соціальних мереж / English: Social network list item -->
-              <a class="menu-social-icon" href="#">
+              <a class="mob-menu-social-icon" href="#">
                 <!-- Українською: Гіперпосилання на соціальну мережу / English: Social network hyperlink -->
-                <svg class="menu-svg" width="24" height="24">
+                <svg class="mob-menu-svg" width="24" height="24">
                   <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin-1-16-412"></use>
                 </svg>
               </a>
             </li>
@@ -1046,7 +1065,7 @@
       <!-- Українською: Універсальний контейнер / English: Universal container -->
     </footer>
     <!-- !!!BACKDROP!!! -->
-    <div class="backdrop visually-hidden">
+    <div class="backdrop">
       <!-- Українською: Фоновий елемент модального вікна / English: Modal window background element -->
       <div class="backdrop-modal">
         <!-- Українською: Модальне вікно / English: Modal window -->
@@ -1054,7 +1073,7 @@
           <!-- Українською: Кнопка закриття модального вікна / English: Modal window close button -->
           <svg class="backdrop-modal-svg-close-button" width="8" height="8">
             <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-            <use href="./images/icons.svg#icon-close-button"></use>
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-24-946"></use>
           </svg>
         </button>
         <p class="backdrop-modal-title">Leave your contacts and we will call you back</p>
@@ -1071,7 +1090,7 @@
               <!-- Українською: Поле вводу / English: Input field -->
               <svg class="backdrop-input-icon" width="18" height="24">
                 <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                <use href="./images/icons.svg#icon-user-name"></use>
+                <use href="./images/icons.svg#icon-person-black-18dp-1-9-1139"></use>
               </svg>
             </div>
           </div>
@@ -1085,7 +1104,7 @@
               <!-- Українською: Поле вводу / English: Input field -->
               <svg class="backdrop-input-icon" width="18" height="24">
                 <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                <use href="./images/icons.svg#icon-user-tel"></use>
+                <use href="./images/icons.svg#icon-phone-black-18dp-2-10543"></use>
               </svg>
             </div>
           </div>
@@ -1099,7 +1118,7 @@
               <!-- Українською: Поле вводу / English: Input field -->
               <svg class="backdrop-input-icon" width="18" height="24">
                 <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
-                <use href="./images/icons.svg#icon-user-email"></use>
+                <use href="./images/icons.svg#icon-email-black-18dp-2-10546"></use>
               </svg>
             </div>
           </div>
